@@ -1,0 +1,22 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: shortener_api_development
+  username: danira
+  password: danira281193
+
+test:
+  <<: *default
+  database: shortener_api_test
+  username: danira
+  password: danira281193
+
+production:
+  <<: *default
+  database: shortener_api_production
+  username: shortener
+  password: <%= ENV["SHORTENER_DATABASE_PASSWORD"] %>
