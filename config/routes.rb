@@ -1,10 +1,4 @@
 Rails.application.routes.draw do
-  namespace :api do
-    namespace :v1 do
-      resources :links
-    end
-  end
-
   devise_for :users, path: '', path_names: {
     sign_in: 'login',
     sign_out: 'logout',
@@ -14,4 +8,12 @@ Rails.application.routes.draw do
     sessions: 'users/sessions',
     registrations: 'users/registrations'
   }
+
+  namespace :api do
+    namespace :v1 do
+      resources :links
+    end
+  end
+
+  get '/:id' , to: 'api/v1/visit_histories#create'
 end
