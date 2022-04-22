@@ -42,3 +42,4 @@ gem 'devise-jwt'
 gem 'active_model_serializers', '~> 0.10.2'
 gem 'pry'
 gem 'rubocop', require: false
+gem 'user_agent_parser'

@@ -231,6 +231,7 @@ GEM
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
     unicode-display_width (2.1.0)
+    user_agent_parser (2.11.0)
     warden (1.2.9)
       rack (>= 2.0.9)
     warden-jwt_auth (0.6.0)
@@ -264,6 +265,7 @@ DEPENDENCIES
   simplecov
   spring
   tzinfo-data
+  user_agent_parser
 
 RUBY VERSION
    ruby 2.7.0p0
