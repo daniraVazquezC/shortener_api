@@ -2,6 +2,7 @@
 
 class Link < ApplicationRecord
   belongs_to :user
+  has_many :visit_histories, dependent: :destroy
   validates :short_link_code, length: { minimum: 6 }, uniqueness: true
   validates :short_link_code, :url, presence: true
   before_validation :generate_short_link_code, on: :create
