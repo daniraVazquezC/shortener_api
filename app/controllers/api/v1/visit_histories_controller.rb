@@ -12,10 +12,10 @@ module Api
           ip_address: ip_address,
           browser: browser,
           operating_system: operating_system,
-          link: link
+          link: @link
         )
 
-        redirect_to link.url
+        redirect_to @link.url
       end
 
       private
