@@ -1,6 +1,6 @@
 ## Endpoints
 
-#### POST /signup
+#### POST https://floating-woodland-13838.herokuapp.com/signup
 ```
 {
 	"user": {
@@ -9,7 +9,7 @@
 	}
 }
 ```
-#### POST /login
+#### POST https://floating-woodland-13838.herokuapp.com/login
 ```
 {
 	"user": {
@@ -18,17 +18,17 @@
 	}
 }
 ```
-#### GET /links
-#### POST /links
+#### GET https://floating-woodland-13838.herokuapp.com/api/v1/links
+#### POST https://floating-woodland-13838.herokuapp.com/api/v1/links
 ```
 {
 	"url": "http://example.com"
 }
 ```
-#### PATCH /links/:short_link_code
+#### PATCH https://floating-woodland-13838.herokuapp.com/api/v1/links/:short_link_code
 ```
 {
 	"url": "http://example.com"
 }
 ```
-#### DELETE /links/:short_link_code
+#### DELETE https://floating-woodland-13838.herokuapp.com/api/v1/links/:short_link_code
