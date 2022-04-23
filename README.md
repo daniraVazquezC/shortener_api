@@ -1,24 +1,34 @@
-# README
+## Endpoints
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+#### POST /signup
+```
+{
+	"user": {
+		"email": "test@gmail.com",
+		"password": "password"
+	}
+}
+```
+#### POST /login
+```
+{
+	"user": {
+		"email": "test@gmail.com",
+		"password": "password"
+	}
+}
+```
+#### GET /links
+#### POST /links
+```
+{
+	"url": "http://example.com"
+}
+```
+#### PATCH /links/:short_link_code
+```
+{
+	"url": "http://example.com"
+}
+```
+#### DELETE /links/:short_link_code
