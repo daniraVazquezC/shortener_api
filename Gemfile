@@ -33,6 +33,7 @@ group :test do
   gem 'shoulda-matchers'
   gem  'database_cleaner-active_record' 
   gem 'simplecov', require: false
+  gem 'faker'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -44,4 +45,3 @@ gem 'pry'
 gem 'rubocop', require: false
 gem 'user_agent_parser'
 gem "validate_url"
-gem 'faker'
