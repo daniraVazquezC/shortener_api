@@ -7,13 +7,13 @@ development:
   <<: *default
   database: shortener_api_development
   username: danira
-  password: danira281193
+  password: danira
 
 test:
   <<: *default
   database: shortener_api_test
   username: danira
-  password: danira281193
+  password: danira
 
 production:
   <<: *default
